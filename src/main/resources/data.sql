@@ -1,30 +1,30 @@
 -- Add groups
 INSERT INTO T_GROUP(NUMBER)
-VALUES (411L),
-       (412L),
-       (413L),
-       (414L),
-       (415L),
-       (416L),
-       (417L),
-       (418L),
-       (419L),
-       (420L);
+VALUES (411),
+       (412),
+       (413),
+       (414),
+       (415),
+       (416),
+       (417),
+       (418),
+       (419),
+       (420);
 
 -- Add students
 INSERT INTO T_STUDENT(FIRSTNAME, LASTNAME, GROUP_ID)
-VALUES ('Almaz', 'Albatyrov', 1L),
-       ('Dana', 'Satvaldina', 2L),
-       ('Ratmir', 'Dudin', 3L),
-       ('Batyr', 'Arystanbekov', 3L),
-       ('Ilya', 'Sorokin', 3L),
-       ('Sultan', 'Sodigolla', 3L),
-       ('Gulden', 'Zhanmukanbetova', 6L),
-       ('Sayan', 'Kinzhitaev', 8L),
-       ('Alfarabi', 'Maken', 8L),
-       ('Madi', 'Albek', 8L),
-       ('Azamat', 'Koshkarov', 9L),
-       ('Vasiliy', 'Kozhemyak', 10L);
+VALUES ('Almaz', 'Albatyrov', 1),
+       ('Dana', 'Satvaldina', 2),
+       ('Ratmir', 'Dudin', 3),
+       ('Batyr', 'Arystanbekov', 3),
+       ('Ilya', 'Sorokin', 3),
+       ('Sultan', 'Sodigolla', 3),
+       ('Gulden', 'Zhanmukanbetova', 6),
+       ('Sayan', 'Kinzhitaev', 8),
+       ('Alfarabi', 'Maken', 8),
+       ('Madi', 'Albek', 8),
+       ('Azamat', 'Koshkarov', 9),
+       ('Vasiliy', 'Kozhemyak', 10);
 
 -- Add time of pairs
 INSERT INTO T_TIMEPAIR(START_TIME, END_TIME)
@@ -79,5 +79,10 @@ VALUES ('Arutun', 'Avetisyan'),
        ('Alexander', 'Dyakonov');
 
 INSERT INTO T_SCHEDULE(CLASSROOM, DATE, GROUP_ID, SUBJECT_ID, TEACHER_ID, TIMEPAIR_ID)
-VALUES (216L, '2022-09-05', 3L, 1L, 6L, 1L),
-       (216L, '2022-09-05', L, L, L, L);
+VALUES (216, '2022-09-05', 3, 1, 6, 1),
+       (552, '2022-09-05', 3, 15, 5, 2),
+       (225, '2022-09-05', 3, 18, 5, 3),
+       (110, '2022-09-05', 3, 11, 9, 5),
+       (208, '2022-09-05', 5, 12, 11, 1),
+       (705, '2022-09-05', 5, 14, 11, 2),
+       (888, '2022-09-05', 5, 6, 16, 4);
