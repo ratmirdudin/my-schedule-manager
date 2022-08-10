@@ -58,3 +58,22 @@ VALUES ('History of Russia'),
        ('Numerical methods'),
        ('Equations of mathematical physics'),
        ('SQL language');
+
+-- Add teachers
+INSERT INTO T_TEACHER(FIRSTNAME, LASTNAME)
+VALUES ('Arutun', 'Avetisyan'),
+       ('Valeriy', 'Alekseev'),
+       ('Sergey', 'Aseev'),
+       ('Vladimir', 'Anashin'),
+       ('Vlaeriy', 'Agoshkov'),
+       ('Ruslan', 'Smelyanskiy'),
+       ('Aleksey', 'Nikitin'),
+       ('VLadimir', 'Voevodin'),
+       ('Igor', 'Sokolov'),
+       ('Lev', 'Pontryagin'),
+       ('Andrey', 'Tihonov'),
+       ('Evgeniy', 'Moiseev'),
+       ('Alexander', 'Samarskiy'),
+       ('Sergey', 'Bogomolov'),
+       ('Vladimir', 'Zaharov'),
+       ('Alexander', 'Dyakonov');
