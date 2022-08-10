@@ -25,3 +25,36 @@ VALUES ('Almaz', 'Albatyrov', 1L),
        ('Madi', 'Albek', 8L),
        ('Azamat', 'Koshkarov', 9L),
        ('Vasiliy', 'Kozhemyak', 10L);
+
+-- Add time of pairs
+INSERT INTO T_TIMEPAIR(START_TIME, END_TIME)
+VALUES ('8:45:00', '10:20:00'),
+       ('10:30:00', '12:05:00'),
+       ('12:15:00', '13:50:00'),
+       ('14:35:00', '16:10:00'),
+       ('16:20:00', '17:55:00'),
+       ('18:00:00', '19:35:00');
+
+-- Add subjects
+INSERT INTO T_SUBJECT(NAME)
+VALUES ('History of Russia'),
+       ('English language'),
+       ('Economics'),
+       ('Philosophy'),
+       ('Physics'),
+       ('Mathematical modelling'),
+       ('Mathematical analysis'),
+       ('Complex analysis'),
+       ('Functional analysis'),
+       ('Algebra and geometry'),
+       ('Algorithms and algorithmic languages'),
+       ('Computer architecture'),
+       ('Computer graphics'),
+       ('Differential equations'),
+       ('Probability theory and mathematical statistics'),
+       ('Programming languages and techniques'),
+       ('Databases'),
+       ('Discrete mathematics'),
+       ('Numerical methods'),
+       ('Equations of mathematical physics'),
+       ('SQL language');
