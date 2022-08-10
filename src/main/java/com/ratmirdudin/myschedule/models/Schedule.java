@@ -9,7 +9,10 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "t_schedule")
+@Table(name = "t_schedule", uniqueConstraints = {
+        @UniqueConstraint(
+                name = "UniqueDateAndClassroomAndTimepair", columnNames = {"date", "classroom", "timepair_id"}
+        )})
 @Data
 @Builder
 @NoArgsConstructor
