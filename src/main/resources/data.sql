@@ -77,3 +77,7 @@ VALUES ('Arutun', 'Avetisyan'),
        ('Sergey', 'Bogomolov'),
        ('Vladimir', 'Zaharov'),
        ('Alexander', 'Dyakonov');
+
+INSERT INTO T_SCHEDULE(CLASSROOM, DATE, GROUP_ID, SUBJECT_ID, TEACHER_ID, TIMEPAIR_ID)
+VALUES (216L, '2022-09-05', 3L, 1L, 6L, 1L),
+       (216L, '2022-09-05', L, L, L, L);
