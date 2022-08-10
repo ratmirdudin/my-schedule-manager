@@ -6,22 +6,24 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 @Entity
-@Table(name = "t_timepair")
+@Table(name = "t_group")
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Timepair {
+public class Group {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Date start;
+    private String number;
 
-    private Date end;
+    @OneToMany(mappedBy = "group", cascade = {CascadeType.PERSIST, CascadeType.MERGE})
+    private List<Student> students = new ArrayList<>();
 
 }
