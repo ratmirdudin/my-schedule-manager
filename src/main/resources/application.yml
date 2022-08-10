@@ -1,3 +1,4 @@
+
 ## Spring Properties
 spring:
   datasource:
@@ -16,3 +17,5 @@ spring:
     properties.hibernate.format_sql: true
     hibernate:
       ddl-auto: create-drop
+server:
+  port: 8080
