@@ -6,7 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 
 @Entity
 @Table(name = "t_timepair")
@@ -20,8 +21,6 @@ public class Timepair {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Date start;
-
-    private Date end;
-
+    private LocalTime startTime;
+    private LocalTime endTime;
 }
